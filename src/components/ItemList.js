@@ -8,7 +8,7 @@ const ItemList = props => {
       <ItemCard
         //key={video.id.videoId}
         item={item}
-        //onVideoSelect={onVideoSelect}
+        clicked={props.clicked}
       />
     );
   });

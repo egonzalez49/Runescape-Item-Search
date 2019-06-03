@@ -10,7 +10,9 @@ const ItemCard = props => {
           <Media src={props.item.icon_large} alt="Item Icon" />
         </Media>
         <Media body>
-          <Media heading>{props.item.name}</Media>
+          <Media heading onClick={() => props.clicked(props.item.id)}>
+            {props.item.name}
+          </Media>
           {props.item.description}
           <div>
             <Octicon icon={Tag} /> {props.item.current.price} GP
